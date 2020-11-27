@@ -1,5 +1,7 @@
+require("dotenv").config();
+
 var con = {
-  host: "localhost",
+  host:"localhost",
   user: "root",
   password: "",
   database: "demo"

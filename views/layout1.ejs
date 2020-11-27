@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   
+    <%- include('./Hdr_Ftr/Head.ejs')%>
+</head>
+
+<body>
+
+    <header>
+        <%- include('./Hdr_Ftr/Header.ejs')%>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>This is great</h1>
+            <p>Welcome to templating using EJS</p>
+        </div>
+        <center>
+            <table class="table table-striped"" id="table" border="1px solid black" >  
+                <thead>  
+                    <tr>  
+                        <th>Product_ID</th>  
+                        <th>Product_Name</th>  
+                    </tr>  
+                </thead>  
+                 <tbody>  
+                 <% print.forEach(function (user) { %>
+                    <tr>  
+                        <td><%= user.ProductId %></td>  
+                        <td><%= user.ProductName %></td>
+                    </tr>                                   
+                 <% }) %>
+                 </tbody>
+            </table>  
+        </center>
+        
+        
+
+
+       
+    </main>
+
+    <footer>
+        <%- include('./Hdr_Ftr/Footer.ejs')%>
+    </footer>
+
+</body>
+
+</html>

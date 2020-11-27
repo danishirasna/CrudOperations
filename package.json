@@ -4,12 +4,21 @@
   "description": "Crud Operations",
   "main": "Index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Index.js"
   },
   "author": "Danish Irasna",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "express-ejs-layouts": "^2.5.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5",
+    "yarn": "^1.22.10"
   }
 }
